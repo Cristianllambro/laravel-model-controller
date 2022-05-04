@@ -1,5 +1,5 @@
 <div class="container">
-    @foreach ($movies as $item)
+    @foreach ($movie as $item)
         <div class="card">
             <ul>
                 <li>Title: {{ $item->title }}</li>
