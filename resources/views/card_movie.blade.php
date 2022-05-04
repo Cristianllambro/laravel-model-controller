@@ -7,7 +7,6 @@
                 <li>Nationality: {{ $item->nationality }}</li>
                 <li>Release date: {{ $item->date }}</li>
                 <li>Rating: {{ $item->vote }}</li>
-
             </ul>
         </div>
     @endforeach

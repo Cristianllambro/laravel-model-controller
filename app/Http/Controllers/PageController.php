@@ -8,9 +8,9 @@ use App\Movie;
 class PageController extends Controller
 {
     public function index() {
-        $myMovie = Movie::all();
+        $movies = Movie::all();
         $data = [
-            'movies' => $myMovie,
+            'movie' => $movies,
         ];
         return view('card_movie', $data);
     }
