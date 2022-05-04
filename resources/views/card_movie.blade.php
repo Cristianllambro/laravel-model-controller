@@ -1,5 +1,14 @@
-<ul>
+<div class="container">
     @foreach ($movies as $item)
-        <li>{{ $item->title }}</li>
+        <div class="card">
+            <ul>
+                <li>Title: {{ $item->title }}</li>
+                <li>Origian title: {{ $item->original_title }}</li>
+                <li>Nationality: {{ $item->nationality }}</li>
+                <li>Release date: {{ $item->date }}</li>
+                <li>Rating: {{ $item->vote }}</li>
+
+            </ul>
+        </div>
     @endforeach
-</ul>
+</div>
